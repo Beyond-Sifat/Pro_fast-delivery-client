@@ -58,12 +58,12 @@ const AdminDashBoard = () => {
 
                         {/* 🥧 Pie accepts data, keys, radius, and auto label */}
                         <Pie
-                            data={pieData} // filtered data only for relevant statuses
-                            dataKey="count" // value shown by size of slice
-                            nameKey="status" // label shown in tooltip/legend
-                            cx="50%" cy="50%"   // center position 
-                            outerRadius={100} // size of the pie
-                            label  // auto label slices
+                            data={pieData}             // filtered data only for relevant statuses
+                            dataKey="count"           // value shown by size of slice
+                            nameKey="status"         // label shown in tooltip/legend
+                            cx="50%" cy="50%"       // center position 
+                            outerRadius={100}      // size of the pie
+                            label                 // auto label slices
 
 
                         >
