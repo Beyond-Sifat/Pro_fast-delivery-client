@@ -40,12 +40,11 @@ const SendParcel = () => {
 
     //Extract unique region
     const uniqueRegions = [...new Set(serviceCenter.map(center => center.region))]
+
+
     // get districts by region
     const getDistrictsByRegion = region =>
         serviceCenter.filter(w => w.region === region).map(w => w.district)
-    // const getDistrictsByRegion = region => {
-    //     return serviceCenter.filter(w => w.region === region).map(w => w.district)
-    // }
 
 
 
@@ -99,7 +98,8 @@ const SendParcel = () => {
             creation_date: new Date().toISOString()
         };
 
-        // TODO: Send to database here
+
+
         axiosSecure.post('/parcels', parcelWithDate)
             .then(async (res) => {
                 console.log(res.data)
