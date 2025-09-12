@@ -21,5 +21,4 @@ const useUserRole = () => {
     isError
   };
 };
- 
 export default useUserRole;

@@ -26,14 +26,14 @@ const CheckoutForm = () => {
         }
     })
 
-    
+
     if (isPending) {
         return <span>Loading...</span>
     }
-    console.log(parcelInfo)
+    // console.log(parcelInfo)
     const amount = parcelInfo.cost
     const amountInCents = amount * 100;
-    console.log(amountInCents);
+    // console.log(amountInCents);
 
 
 
@@ -102,7 +102,6 @@ const CheckoutForm = () => {
                         confirmButtonText: 'go to My Parcel'
                     })
 
-                    
                     // ✅ Track the payment completion
                     logTracking({
                         trackingId: parcelInfo.trackingId,

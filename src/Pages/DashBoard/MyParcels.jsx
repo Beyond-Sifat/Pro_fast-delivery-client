@@ -10,6 +10,8 @@ const MyParcels = () => {
     const { user } = useAuth();
     const axiosSecure = useAxiosSecure();
     const navigate = useNavigate();
+
+
     const { data: parcels = [], refetch } = useQuery({
         queryKey: ['my-parcels', user.email],
         queryFn: async () => {
@@ -81,7 +83,7 @@ const MyParcels = () => {
                                     {parcel.payment_status}
                                 </span>
                             </td>
-                            
+
 
                             {/* 🔘 Action buttons */}
                             <td className="space-x-2">
